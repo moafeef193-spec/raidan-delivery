@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ريدان | لوحة التحكم</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header class="hero"><div class="brand">🍽️ مطعم ريدان للمندي</div><div class="title">لوحة تحكم الدلفري</div></header>
+<main>
+<section class="panel">
+<h2>👨‍💼 إدارة الدلفري</h2>
+<div class="formrow"><input id="newDriver" placeholder="اسم الدلفري"><button class="gold" onclick="addDriver()">إضافة</button></div>
+<div id="adminDrivers"></div>
+</section>
+<section class="panel">
+<h2>📋 سجل اليوم</h2>
+<div class="tablewrap"><table><thead><tr><th>الدلفري</th><th>الطلب</th><th>الخروج</th><th>الرجوع</th><th>الحالة</th></tr></thead><tbody id="history"></tbody></table></div>
+</section>
+<section class="actions">
+<a href="index.html" class="btn">واجهة الآيباد</a>
+<button class="gold" onclick="window.print()">🖨️ طباعة / PDF</button>
+</section>
+</main>
+<script src="app.js"></script>
+<script>document.addEventListener('DOMContentLoaded', loadAdmin);</script>
+</body>
+</html>
