@@ -1,4 +1,4 @@
-const CONFIG={SUPABASE_URL:"YOUR_SUPABASE_URL",SUPABASE_ANON_KEY:"YOUR_SUPABASE_ANON_KEY"};
+const CONFIG={SUPABASE_URL:"https://fkhwohfmwbvztwgarngj.supabase.co",SUPABASE_ANON_KEY:"sb_publishable_QGcSfYZLF1z_VY4mbpHOJQ_8_F-qaP5"};
 let sb=null, drivers=[], orders=[];
 const seed=["شاهد","نعيم","ارشد","صمد","منور علي","شهزاد","Anam","Naeem UD","اديب"];
 
